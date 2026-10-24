@@ -187,6 +187,15 @@
   line-height: 1.95;
 }
 
+.terms code {
+  padding: 0 0.28em;
+  border-radius: 2px;
+  background: rgba(26, 24, 19, 0.055);
+  color: var(--accent-2);
+  font-family: Georgia, "Times New Roman", monospace;
+  font-size: 0.94em;
+}
+
 
 @media (max-width: 760px) {
   .story { margin-top: 34px; }
