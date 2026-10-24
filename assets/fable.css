@@ -1,182 +1,225 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ============================================================
+   寓言正文 + 谜底
+   ============================================================ */
 
-body {
-  background: #f4efe4;
-  color: #2b2b2b;
-  font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
-  line-height: 2.1;
-  letter-spacing: 0.05em;
-  padding: 0 20px 80px;
-}
-
-.page {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-header {
-  text-align: center;
-  padding: 90px 0 60px;
-  border-bottom: 1px solid #c9bfa8;
-}
-
-header .tag {
-  display: inline-block;
-  font-size: 13px;
-  letter-spacing: 0.4em;
-  color: #8a7d5f;
-  border: 1px solid #c9bfa8;
-  padding: 4px 18px 4px 22px;
-  border-radius: 2px;
-  margin-bottom: 28px;
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: #1f1f1f;
-}
-
-header .subtitle {
-  margin-top: 16px;
-  font-size: 15px;
-  color: #8a7d5f;
-  letter-spacing: 0.2em;
-}
-
-.story {
-  padding: 60px 0 40px;
-}
-
-.chapter-mark {
-  text-align: center;
-  color: #b3a583;
-  font-size: 20px;
-  margin: 48px 0;
-  letter-spacing: 1em;
-  text-indent: 1em;
-}
+.story { margin-top: 46px; }
 
 .story p {
-  text-indent: 2em;
-  margin-bottom: 1.4em;
-  font-size: 17px;
-  text-align: justify;
+  font-size: 17.5px;
+  line-height: 2.05;
+  margin-bottom: 1.35em;
+  text-align: start;
 }
 
 .story > p:first-of-type::first-letter {
-  font-size: 2.6em;
   float: left;
-  line-height: 1.1;
-  padding: 4px 10px 0 0;
-  color: #7a6a45;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--vermilion);
+  font-size: 3.5em;
   font-weight: 700;
+  line-height: 0.92;
 }
 
+/* 对白：第二墨色的一条竖线 */
 .dialogue {
-  margin: 2em 0 2em 3em;
-  padding-left: 1.2em;
-  border-left: 3px solid #c9bfa8;
-  color: #4a4232;
-  font-size: 17px;
+  margin: 2.1em 0;
+  padding: 2px 0 2px 18px;
+  border-left: 2px solid var(--accent-2);
+  color: #2a261d;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 18.5px;
+  line-height: 1.95;
 }
 
-.dialogue p { text-indent: 0; margin-bottom: 0.8em; }
+.dialogue p {
+  margin-bottom: 0.55em;
+  font-size: inherit;
+  line-height: inherit;
+}
 
+.dialogue p:last-child { margin-bottom: 0; }
+
+/* 章与章之间：细线 + 朱菱 */
+.chapter-mark {
+  position: relative;
+  height: 1px;
+  margin: 44px 0;
+  background: var(--line);
+}
+
+.chapter-mark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--vermilion);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* 谜底：换一张稍深的纸 */
 .reveal {
-  background: #2b2b2b;
-  color: #e8e2d2;
-  margin: 70px -20px 0;
-  padding: 70px 20px 60px;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin: 74px -40px 0;
+  padding: 58px 40px 64px;
+  border-top: 3px double rgba(26, 24, 19, 0.5);
+  background:
+    radial-gradient(circle at 82% 8%, rgba(255, 255, 255, 0.28), transparent 46%),
+    repeating-linear-gradient(0deg, rgba(90, 70, 40, 0.03) 0 1px, transparent 1px 4px),
+    var(--paper-deep);
 }
 
-.reveal .inner { max-width: 720px; margin: 0 auto; }
+.reveal .inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reveal-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.stamp {
+  padding: 3px 10px;
+  background: var(--vermilion);
+  color: var(--paper);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 13px;
+  transform: rotate(-1.5deg);
+}
 
 .reveal h2 {
-  text-align: center;
-  font-size: 26px;
-  letter-spacing: 0.3em;
-  color: #d9c98f;
-  margin-bottom: 8px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .reveal .en {
-  text-align: center;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
-  color: #8d8570;
-  letter-spacing: 0.25em;
-  margin-bottom: 50px;
+  font-style: italic;
+  letter-spacing: 0.06em;
 }
 
-.reveal p {
-  margin-bottom: 1.3em;
-  font-size: 16px;
-  text-align: justify;
+.reveal-body {
+  margin-top: 30px;
 }
 
+.reveal-intro {
+  max-width: 640px;
+}
+
+.reveal-intro p {
+  margin-bottom: 1.05em;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.95;
+}
+
+.reveal-intro strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* 对照表 */
 .mapping {
-  margin: 40px 0;
-  border-top: 1px solid #4a463c;
-  border-bottom: 1px solid #4a463c;
-  padding: 10px 0;
+  margin-top: 34px;
+  border-top: 1px solid var(--rule);
+  counter-reset: map;
 }
 
 .mapping .row {
-  display: flex;
-  padding: 10px 0;
-  font-size: 15.5px;
-  border-bottom: 1px dashed #4a463c;
+  display: grid;
+  grid-template-columns: 2.2em minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(26, 24, 19, 0.2);
+  font-size: 14.5px;
+  line-height: 1.75;
 }
 
-.mapping .row:last-child { border-bottom: none; }
-
-.mapping .k {
-  flex: 0 0 46%;
-  color: #d9c98f;
-  padding-right: 12px;
+.mapping .row::before {
+  counter-increment: map;
+  content: counter(map, decimal-leading-zero);
+  padding-top: 0.2em;
+  color: var(--vermilion);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
 }
 
-.mapping .v { flex: 1; color: #cfc8b2; }
+.mapping .row:last-child { border-bottom: 0; }
 
+.mapping .k { color: var(--ink); }
+.mapping .v { color: var(--ink-soft); }
+
+/* 术语 */
 .terms {
-  margin-top: 34px;
+  max-width: 720px;
+  margin-top: 48px;
 }
 
 .terms h3 {
-  font-size: 17px;
-  color: #d9c98f;
-  letter-spacing: 0.2em;
-  margin: 30px 0 10px;
+  margin: 26px 0 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--vermilion);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.terms p { font-size: 15.5px; color: #cfc8b2; }
-
-footer {
-  text-align: center;
-  margin-top: 70px;
-  font-size: 13px;
-  color: #a3987d;
-  letter-spacing: 0.2em;
+.terms h3:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
-footer .back {
-  display: block;
-  width: fit-content;
-  margin: 16px auto 0;
-  font-size: 12px;
-  color: #8a7d5f;
-  text-decoration: none;
-  border-bottom: 1px solid #d8cfba;
-  padding-bottom: 2px;
+.terms p {
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.95;
 }
 
-footer .back:hover {
-  color: #5c5138;
-  border-color: #8a7d5f;
+@media (max-width: 980px) {
+  .reveal {
+    margin-left: -28px;
+    margin-right: -28px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
 }
 
-@media (max-width: 600px) {
-  h1 { font-size: 28px; }
-  .reveal { margin: 60px -16px 0; padding: 50px 16px 40px; }
+@media (max-width: 760px) {
+  .story { margin-top: 34px; }
+
+  .story p { font-size: 17px; }
+
+  .dialogue { font-size: 17.5px; }
+
+  .reveal {
+    margin: 56px -22px 0;
+    padding: 44px 22px 50px;
+  }
+
+  .reveal h2 { font-size: 32px; }
+
+  .reveal-body {
+    margin-top: 24px;
+  }
+
+  .mapping .row {
+    grid-template-columns: 1.8em minmax(0, 1fr);
+    gap: 4px 12px;
+  }
+
+  .mapping .v { grid-column: 2; }
+
+  .terms { margin-top: 38px; }
 }

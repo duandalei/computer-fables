@@ -1,135 +1,94 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ============================================================
+   目录页
+   ============================================================ */
 
-body {
-  background: #f4efe4;
-  color: #2b2b2b;
-  font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
-  line-height: 2;
-  letter-spacing: 0.05em;
-  padding: 0 20px 80px;
-}
-
-.page {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-header {
-  text-align: center;
-  padding: 100px 0 54px;
-}
-
-header .tag {
-  display: inline-block;
-  font-size: 13px;
-  letter-spacing: 0.4em;
-  color: #8a7d5f;
-  border: 1px solid #c9bfa8;
-  padding: 4px 18px 4px 22px;
-  border-radius: 2px;
-  margin-bottom: 28px;
-}
-
-h1 {
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-indent: 0.22em;
-  color: #1f1f1f;
-}
-
-header .en {
-  margin-top: 18px;
-  font-size: 13px;
-  color: #8a7d5f;
-  letter-spacing: 0.42em;
-  text-indent: 0.42em;
+.page--index .subtitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.08em;
 }
 
 .preface {
-  max-width: 30em;
-  margin: 30px auto 0;
+  max-width: 31em;
+  margin-top: 24px;
+  color: var(--ink-soft);
+  font-family: "STKaiti", "KaiTi", serif;
   font-size: 15px;
-  line-height: 2;
-  color: #6b614c;
-  text-align: center;
+  line-height: 1.95;
 }
 
 .toc {
-  margin-top: 54px;
-  border-top: 1px solid #c9bfa8;
+  margin-top: 46px;
 }
 
 .entry {
   display: grid;
-  grid-template-columns: 56px 1fr auto;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
   align-items: baseline;
-  column-gap: 18px;
-  padding: 34px 10px;
-  border-bottom: 1px solid #ded4bf;
-  text-decoration: none;
+  gap: 0 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
   color: inherit;
+  text-decoration: none;
   transition: background 0.2s ease, padding 0.2s ease;
 }
 
 .entry:hover {
-  background: #efe7d5;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: rgba(166, 51, 40, 0.035);
 }
 
 .entry .num {
+  color: var(--vermilion);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
-  color: #b3a583;
-  letter-spacing: 0.2em;
 }
 
 .entry .title {
   display: block;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  color: #1f1f1f;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
 }
+
+.entry:hover .title { color: var(--vermilion); }
 
 .entry .sub {
   display: block;
   margin-top: 4px;
+  color: var(--muted);
+  font-family: "STKaiti", "KaiTi", serif;
   font-size: 14px;
-  letter-spacing: 0.12em;
-  color: #8a7d5f;
 }
 
 .entry .concept {
-  font-size: 12.5px;
-  letter-spacing: 0.16em;
-  color: #7a6a45;
-  white-space: nowrap;
-  transition: color 0.2s ease;
-}
-
-.entry:hover .concept { color: #7a6a45; }
-
-footer {
-  text-align: center;
-  margin-top: 66px;
+  color: var(--accent-2);
+  font-family: "STKaiti", "KaiTi", serif;
   font-size: 13px;
-  color: #a3987d;
-  letter-spacing: 0.2em;
+  white-space: nowrap;
 }
 
-@media (max-width: 600px) {
-  h1 { font-size: 30px; }
-  header { padding: 72px 0 44px; }
+.entry--1 { --accent-2: #2f4a5a; }
+.entry--2 { --accent-2: #3f5a52; }
+.entry--3 { --accent-2: #8a5a2b; }
+
+@media (max-width: 760px) {
   .preface { font-size: 14px; }
+
   .entry {
-    grid-template-columns: 34px 1fr;
-    padding: 26px 4px;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 0 12px;
+    padding: 24px 0;
   }
-  .entry .title { font-size: 20px; }
+
+  .entry .title { font-size: 21px; }
+
   .entry .concept {
     grid-column: 2;
-    margin-top: 6px;
+    margin-top: 5px;
     white-space: normal;
   }
 }

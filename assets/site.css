@@ -8,25 +8,25 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid #c9bfa8;
+  border: 1px solid rgba(26, 24, 19, 0.28);
   border-radius: 50%;
-  background: rgba(244, 239, 228, 0.9);
+  background: rgba(235, 225, 203, 0.9);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  color: #6b614c;
+  color: #6e6553;
   transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease,
     transform 0.2s ease;
 }
 
 .github-link:hover {
-  color: #1f1f1f;
-  border-color: #8a7d5f;
-  background: #f4efe4;
+  color: #a63328;
+  border-color: #a63328;
+  background: #ebe1cb;
   transform: translateY(-1px);
 }
 
 .github-link:focus-visible {
-  outline: 2px solid #8a7d5f;
+  outline: 2px solid #a63328;
   outline-offset: 3px;
 }
 

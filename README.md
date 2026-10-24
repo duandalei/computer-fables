@@ -15,9 +15,15 @@
 ## 结构
 
 - `index.html` —— 目录页
-- `assets/fable.css` —— 各篇共用的排版样式
+- `assets/book.css` —— 纸色、版心、书口、页脚等共用样式
+- `assets/fable.css` —— 正文、对白、谜底的排版
 - `assets/index.css` —— 目录页样式
+- `assets/site.css` —— 右上角 GitHub 入口
 - 三篇正文各自是独立的 HTML 文件
+
+## 设计
+
+排版取意于刻本：纸色、朱印、双线、左侧书口。每篇有自己的印章与第二墨色，谜底换一张稍深的纸，不做页边批注。
 
 ## 部署
 

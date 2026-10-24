@@ -16,3 +16,6 @@ desktop.ini
 
 # 预留：若以后引入构建工具
 node_modules/
+
+# 本地设计探索（不发布）
+design-previews/
