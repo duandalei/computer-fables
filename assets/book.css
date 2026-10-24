@@ -13,14 +13,16 @@
   --rule: rgba(26, 24, 19, 0.32);
   --line: rgba(26, 24, 19, 0.16);
   --accent-2: #2f4a5a;
+  --content: 800px;
+  --gutter: 64px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { background: var(--paper); }
-body { min-height: 100vh; }
 
 body {
+  min-height: 100vh;
   background:
     radial-gradient(circle at 18% 6%, rgba(255, 252, 242, 0.5), transparent 42%),
     radial-gradient(circle at 82% 94%, rgba(120, 95, 60, 0.1), transparent 55%),
@@ -38,31 +40,14 @@ body {
 .fable-2 { --accent-2: #3f5a52; } /* 雨 · 苔青 */
 .fable-3 { --accent-2: #8a5a2b; } /* 戏台 · 赭 */
 
-/* 版心：左侧书口 + 右侧正文 */
+/* 单一版心：题头、故事、谜底、页脚共用一条左缘 */
 .page {
-  display: grid;
-  grid-template-columns: 96px minmax(0, 640px);
-  column-gap: 64px;
-  justify-content: center;
-  max-width: 1040px;
+  max-width: calc(var(--content) + var(--gutter) * 2);
   margin: 0 auto;
-  padding: 64px;
+  padding: var(--gutter);
 }
 
-.page--index {
-  grid-template-columns: 96px minmax(0, 720px);
-}
-
-.margin {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.main {
-  grid-column: 2;
-  grid-row: 1;
-  min-width: 0;
-}
+.main { display: block; }
 
 /* 朱印 */
 .seal {
@@ -70,6 +55,7 @@ body {
   place-items: center;
   width: 54px;
   height: 54px;
+  margin-bottom: 24px;
   border: 2px solid var(--vermilion);
   color: var(--vermilion);
   font-family: "STKaiti", "KaiTi", serif;
@@ -77,17 +63,6 @@ body {
   opacity: 0.9;
   transform: rotate(-3deg);
   box-shadow: inset 0 0 0 3px var(--paper);
-}
-
-/* 书口 */
-.folio {
-  margin-top: 30px;
-  padding-right: 8px;
-  border-right: 1px solid rgba(166, 51, 40, 0.3);
-  writing-mode: vertical-rl;
-  color: var(--muted);
-  font-family: "STKaiti", "KaiTi", serif;
-  font-size: 12px;
 }
 
 header h1 {
@@ -129,7 +104,6 @@ footer {
   justify-content: space-between;
   align-items: baseline;
   gap: 10px 24px;
-  grid-column: 1 / -1;
   margin-top: 56px;
   padding-top: 16px;
   border-top: 1px solid var(--line);
@@ -155,53 +129,27 @@ footer .back:hover {
 }
 
 @media (max-width: 980px) {
-  .page,
-  .page--index {
-    grid-template-columns: 72px minmax(0, 640px);
-    column-gap: 40px;
-    padding: 48px 36px;
-  }
-
+  :root { --gutter: 36px; }
   header h1 { font-size: 46px; }
 }
 
 @media (max-width: 860px) {
-  .page,
-  .page--index {
-    grid-template-columns: 64px minmax(0, 1fr);
-    column-gap: 32px;
-    padding: 40px 28px;
-  }
-
+  :root { --gutter: 28px; }
   header h1 { font-size: 42px; }
 }
 
 @media (max-width: 760px) {
-  .page,
-  .page--index {
-    display: block;
-    padding: 32px 22px 56px;
-  }
+  :root { --gutter: 22px; }
 
-  .margin {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
+  .page {
+    padding: 32px var(--gutter) 56px;
   }
 
   .seal {
     width: 42px;
     height: 42px;
+    margin-bottom: 20px;
     font-size: 20px;
-    margin: 0;
-  }
-
-  .folio {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    writing-mode: horizontal-tb;
   }
 
   header h1 { font-size: 38px; }
