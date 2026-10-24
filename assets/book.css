@@ -41,6 +41,7 @@ body {
 .fable-3 { --accent-2: #8a5a2b; } /* 戏台 · 赭 */
 .fable-4 { --accent-2: #6a3b4e; } /* 关引 · 紫檀 */
 .fable-5 { --accent-2: #7a6a2f; } /* 茶楼 · 秋香 */
+.fable-6 { --accent-2: #3e3f5c; } /* 长街 · 黛青 */
 
 /* 单一版心：题头、故事、谜底、页脚共用一条左缘 */
 .page {

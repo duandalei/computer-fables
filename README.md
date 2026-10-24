@@ -13,6 +13,7 @@
 | 叁 | [随班戏楼](随班戏楼.html) | Docker 与容器化 |
 | 肆 | [一纸关引](一纸关引.html) | JWT |
 | 伍 | [明码点菜](明码点菜.html) | HTTP 与 HTTPS |
+| 陆 | [按牌分银](按牌分银.html) | Transformer 中的注意力机制 |
 
 ## 结构
 
@@ -21,7 +22,7 @@
 - `assets/fable.css` —— 正文、对白、谜底的排版
 - `assets/index.css` —— 目录页样式
 - `assets/site.css` —— 右上角 GitHub 入口
-- 五篇正文各自是独立的 HTML 文件
+- 六篇正文各自是独立的 HTML 文件
 
 ## 设计
 
