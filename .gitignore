@@ -1,0 +1,18 @@
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 本地设置与临时文件
+.claude/settings.local.json
+*.tmp
+*.log
+~$*
+
+# 预留：若以后引入构建工具
+node_modules/
