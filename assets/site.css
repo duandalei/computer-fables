@@ -1,0 +1,57 @@
+.github-link {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c9bfa8;
+  border-radius: 50%;
+  background: rgba(244, 239, 228, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: #6b614c;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.github-link:hover {
+  color: #1f1f1f;
+  border-color: #8a7d5f;
+  background: #f4efe4;
+  transform: translateY(-1px);
+}
+
+.github-link:focus-visible {
+  outline: 2px solid #8a7d5f;
+  outline-offset: 3px;
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+@media (max-width: 600px) {
+  .github-link {
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .github-link svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media print {
+  .github-link {
+    display: none;
+  }
+}
