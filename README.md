@@ -8,10 +8,10 @@
 
 | | 寓言 | 概念 |
 |---|---|---|
-| 壹 | [碎成一百片的信](碎成一百片的信.html) | 分组交换与 TCP/IP |
-| 贰 | [记住每一场雨的人](记住每一场雨的人.html) | 过拟合 |
-| 叁 | [随班戏楼](随班戏楼.html) | Docker 与容器化 |
-| 肆 | [一纸关引](一纸关引.html) | JWT |
-| 伍 | [明码点菜](明码点菜.html) | HTTP 与 HTTPS |
-| 陆 | [按牌分银](按牌分银.html) | Transformer 中的注意力机制 |
-| 柒 | [分场同灶](分场同灶.html) | 进程与线程 |
+| 壹 | [碎成一百片的信](https://duandalei.github.io/computer-fables/碎成一百片的信.html) | 分组交换与 TCP/IP |
+| 贰 | [记住每一场雨的人](https://duandalei.github.io/computer-fables/记住每一场雨的人.html) | 过拟合 |
+| 叁 | [随班戏楼](https://duandalei.github.io/computer-fables/随班戏楼.html) | Docker 与容器化 |
+| 肆 | [一纸关引](https://duandalei.github.io/computer-fables/一纸关引.html) | JWT |
+| 伍 | [明码点菜](https://duandalei.github.io/computer-fables/明码点菜.html) | HTTP 与 HTTPS |
+| 陆 | [按牌分银](https://duandalei.github.io/computer-fables/按牌分银.html) | Transformer 中的注意力机制 |
+| 柒 | [分场同灶](https://duandalei.github.io/computer-fables/分场同灶.html) | 进程与线程 |
