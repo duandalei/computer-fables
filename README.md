@@ -15,3 +15,4 @@
 | 伍 | [明码点菜](https://duandalei.github.io/computer-fables/明码点菜.html) | HTTP 与 HTTPS |
 | 陆 | [按牌分银](https://duandalei.github.io/computer-fables/按牌分银.html) | Transformer 中的注意力机制 |
 | 柒 | [分场同灶](https://duandalei.github.io/computer-fables/分场同灶.html) | 进程与线程 |
+| 捌 | [认格不认人](https://duandalei.github.io/computer-fables/认格不认人.html) | REST 端点 |

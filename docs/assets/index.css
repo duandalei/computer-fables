@@ -74,6 +74,7 @@
 .entry--5 { --accent-2: #7a6a2f; }
 .entry--6 { --accent-2: #3e3f5c; }
 .entry--7 { --accent-2: #7b3b2b; }
+.entry--8 { --accent-2: #4a6b52; }
 
 @media (max-width: 760px) {
   .preface { font-size: 14px; }

@@ -43,6 +43,7 @@ body {
 .fable-5 { --accent-2: #7a6a2f; } /* 茶楼 · 秋香 */
 .fable-6 { --accent-2: #3e3f5c; } /* 长街 · 黛青 */
 .fable-7 { --accent-2: #7b3b2b; } /* 酱园 · 酱红 */
+.fable-8 { --accent-2: #4a6b52; } /* 货栈 · 竹青 */
 
 /* 单一版心：题头、故事、谜底、页脚共用一条左缘 */
 .page {
