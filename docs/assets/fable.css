@@ -89,7 +89,7 @@
   background: var(--vermilion);
   color: var(--paper);
   font-family: "STKaiti", "KaiTi", serif;
-  font-size: 13px;
+  font-size: 14px;
   transform: rotate(-1.5deg);
 }
 
@@ -102,7 +102,7 @@
 .reveal .en {
   color: var(--muted);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
+  font-size: 15px;
   font-style: italic;
   letter-spacing: 0.06em;
 }
@@ -118,7 +118,7 @@
 .reveal-intro p {
   margin-bottom: 1.05em;
   color: var(--ink-soft);
-  font-size: 15.5px;
+  font-size: 16.5px;
   line-height: 1.95;
 }
 
@@ -140,7 +140,7 @@
   gap: 16px;
   padding: 12px 0;
   border-bottom: 1px dashed rgba(26, 24, 19, 0.2);
-  font-size: 14.5px;
+  font-size: 15.5px;
   line-height: 1.75;
 }
 
@@ -150,7 +150,7 @@
   padding-top: 0.2em;
   color: var(--vermilion);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 10.5px;
+  font-size: 12px;
   letter-spacing: 0.04em;
 }
 
@@ -194,7 +194,7 @@
 
 .terms p {
   color: var(--ink-soft);
-  font-size: 15.5px;
+  font-size: 16.5px;
   line-height: 1.95;
 }
 
