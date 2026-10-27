@@ -76,6 +76,63 @@
 .entry--7 { --accent-2: #7b3b2b; }
 .entry--8 { --accent-2: #4a6b52; }
 .entry--9 { --accent-2: #5a4a6e; }
+.entry--10 { --accent-2: #3f4e4a; }
+.entry--11 { --accent-2: #653f5c; }
+.entry--12 { --accent-2: #85702f; }
+.entry--13 { --accent-2: #2f3e52; }
+
+/* 互联网基础读法 */
+.path {
+  margin-top: 38px;
+  padding: 18px 22px 20px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--vermilion);
+  background: rgba(166, 51, 40, 0.03);
+}
+
+.path-title {
+  color: var(--muted);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 14px;
+}
+
+.path-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 10px;
+  list-style: none;
+  counter-reset: path;
+  font-size: 14.5px;
+}
+
+.path-list li {
+  counter-increment: path;
+}
+
+.path-list li::before {
+  content: counter(path) ". ";
+  color: var(--vermilion);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+}
+
+.path-list a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.path-list a:hover {
+  color: var(--vermilion);
+  border-color: var(--vermilion);
+}
+
+@media (max-width: 760px) {
+  .path { padding: 16px 18px 18px; }
+  .path-list { display: block; }
+  .path-list li { margin-top: 6px; }
+}
 
 @media (max-width: 760px) {
   .preface { font-size: 14px; }

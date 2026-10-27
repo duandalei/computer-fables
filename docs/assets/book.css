@@ -45,6 +45,10 @@ body {
 .fable-7 { --accent-2: #7b3b2b; } /* 酱园 · 酱红 */
 .fable-8 { --accent-2: #4a6b52; } /* 货栈 · 竹青 */
 .fable-9 { --accent-2: #5a4a6e; } /* 族谱 · 青莲 */
+.fable-10 { --accent-2: #3f4e4a; } /* 门牌 · 鸦青 */
+.fable-11 { --accent-2: #653f5c; } /* 挂号 · 绛紫 */
+.fable-12 { --accent-2: #85702f; } /* 问名 · 姜黄 */
+.fable-13 { --accent-2: #2f3e52; } /* 总述 · 墨蓝 */
 
 /* 单一版心：题头、故事、谜底、页脚共用一条左缘 */
 .page {

@@ -181,6 +181,17 @@
   border-top: 0;
 }
 
+/* 总述页里夹在对照表之间的节标题 */
+.reveal-body > h3 {
+  margin: 44px 0 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--vermilion);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .terms p {
   color: var(--ink-soft);
   font-size: 15.5px;
@@ -194,6 +205,21 @@
   color: var(--accent-2);
   font-family: Georgia, "Times New Roman", monospace;
   font-size: 0.94em;
+}
+
+/* 正文里的篇目互链 */
+.reveal-intro a,
+.terms a,
+.mapping a {
+  color: var(--vermilion);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(166, 51, 40, 0.35);
+}
+
+.reveal-intro a:hover,
+.terms a:hover,
+.mapping a:hover {
+  border-color: var(--vermilion);
 }
 
 
