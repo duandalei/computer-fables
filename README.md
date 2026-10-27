@@ -16,3 +16,4 @@
 | 陆 | [按牌分银](https://duandalei.github.io/computer-fables/按牌分银.html) | Transformer 中的注意力机制 |
 | 柒 | [分场同灶](https://duandalei.github.io/computer-fables/分场同灶.html) | 进程与线程 |
 | 捌 | [认格不认人](https://duandalei.github.io/computer-fables/认格不认人.html) | REST 端点 |
+| 玖 | [一树千丁](https://duandalei.github.io/computer-fables/一树千丁.html) | DOM |
