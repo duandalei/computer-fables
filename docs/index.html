@@ -22,136 +22,157 @@
       <div class="seal">寓</div>
       <h1>计算机寓言</h1>
       <p class="subtitle">Computer Fables</p>
-      <p class="preface">十四则寓言，十四个概念。每一则先讲一个古老行当里的故事，<br>再把故事逐条译回计算机——故事在前，谜底在后。</p>
+      <p class="preface">十四则寓言，分作四类，每类按由浅入深的次序排列。<br>故事在前，谜底在后；想弄懂互联网，从第一类读起。</p>
       <div class="rule" aria-hidden="true"></div>
     </header>
 
-    <nav class="path" aria-label="互联网读法">
-      <p class="path-title">想弄懂互联网，按这个次序读</p>
-      <ol class="path-list">
-        <li><a href="碎成一百片的信.html">分组交换</a></li>
-        <li><a href="门牌与指路簿.html">IP 地址与路由</a></li>
-        <li><a href="一封挂号信.html">TCP/IP</a></li>
-        <li><a href="按名索址.html">DNS</a></li>
-        <li><a href="明码点菜.html">HTTP</a></li>
-        <li><a href="封匣.html">TLS</a></li>
-        <li><a href="回车之后.html">一次请求的全程</a></li>
-      </ol>
-    </nav>
+    <section class="category" aria-labelledby="cat-internet">
+      <div class="category-head">
+        <h2 class="category-title" id="cat-internet">互联网基础</h2>
+        <span class="category-en">Internet</span>
+        <p class="category-note">从把数据切碎开始，经地址与路由、可靠传输、名字解析，最后看一次请求的全程。</p>
+      </div>
+      <nav class="toc" aria-label="互联网基础">
+        <a class="entry entry--1" href="碎成一百片的信.html">
+          <span class="text">
+            <span class="title">碎成一百片的信</span>
+            <span class="sub">—— 一个关于“把信裁碎”的故事</span>
+          </span>
+          <span class="concept">分组交换</span>
+        </a>
 
-    <nav class="toc" aria-label="目录">
-      <a class="entry entry--1" href="碎成一百片的信.html">
-        <span class="text">
-          <span class="title">碎成一百片的信</span>
-          <span class="sub">—— 一个关于“把信裁碎”的故事</span>
-        </span>
-        <span class="concept">分组交换</span>
-      </a>
+        <a class="entry entry--10" href="门牌与指路簿.html">
+          <span class="text">
+            <span class="title">门牌与指路簿</span>
+            <span class="sub">—— 一个关于“东西在哪儿、路怎么走”的故事</span>
+          </span>
+          <span class="concept">IP 地址与路由</span>
+        </a>
 
-      <a class="entry entry--2" href="记住每一场雨的人.html">
-        <span class="text">
-          <span class="title">记住每一场雨的人</span>
-          <span class="sub">—— 一个关于“懂得太多”的故事</span>
-        </span>
-        <span class="concept">过拟合</span>
-      </a>
+        <a class="entry entry--11" href="一封挂号信.html">
+          <span class="text">
+            <span class="title">一封挂号信</span>
+            <span class="sub">—— 一个关于“丢了怎么办”的故事</span>
+          </span>
+          <span class="concept">TCP/IP</span>
+        </a>
 
-      <a class="entry entry--3" href="随班戏楼.html">
-        <span class="text">
-          <span class="title">随班戏楼</span>
-          <span class="sub">—— 一个关于“换个地方就演不了”的故事</span>
-        </span>
-        <span class="concept">Docker 与容器化</span>
-      </a>
+        <a class="entry entry--12" href="按名索址.html">
+          <span class="text">
+            <span class="title">按名索址</span>
+            <span class="sub">—— 一个关于“记得名字，不记得门牌”的故事</span>
+          </span>
+          <span class="concept">DNS</span>
+        </a>
 
-      <a class="entry entry--4" href="一纸关引.html">
-        <span class="text">
-          <span class="title">一纸关引</span>
-          <span class="sub">—— 一个关于“不查名册也敢放行”的故事</span>
-        </span>
-        <span class="concept">JWT</span>
-      </a>
+        <a class="entry entry--13" href="回车之后.html">
+          <span class="text">
+            <span class="title">回车之后</span>
+            <span class="sub">—— 一个关于“一次点击要经过多少手”的故事</span>
+          </span>
+          <span class="concept">一次请求的全程</span>
+        </a>
+      </nav>
+    </section>
 
-      <a class="entry entry--5" href="明码点菜.html">
-        <span class="text">
-          <span class="title">明码点菜</span>
-          <span class="sub">—— 一个关于“菜条人人都看得见”的故事</span>
-        </span>
-        <span class="concept">HTTP</span>
-      </a>
+    <section class="category" aria-labelledby="cat-web">
+      <div class="category-head">
+        <h2 class="category-title" id="cat-web">Web 与应用</h2>
+        <span class="category-en">Web &amp; Applications</span>
+        <p class="category-note">HTTP 怎么说，TLS 怎么封，REST 怎么组织资源，JWT 怎么带身份，DOM 怎么把页面立起来。</p>
+      </div>
+      <nav class="toc" aria-label="Web 与应用">
+        <a class="entry entry--5" href="明码点菜.html">
+          <span class="text">
+            <span class="title">明码点菜</span>
+            <span class="sub">—— 一个关于“菜条人人都看得见”的故事</span>
+          </span>
+          <span class="concept">HTTP</span>
+        </a>
 
-      <a class="entry entry--6" href="按牌分银.html">
-        <span class="text">
-          <span class="title">按牌分银</span>
-          <span class="sub">—— 一个关于“一条街上，谁该听谁”的故事</span>
-        </span>
-        <span class="concept">注意力机制</span>
-      </a>
+        <a class="entry entry--14" href="封匣.html">
+          <span class="text">
+            <span class="title">封匣</span>
+            <span class="sub">—— 一个关于“让不该看的人看不见”的故事</span>
+          </span>
+          <span class="concept">TLS</span>
+        </a>
 
-      <a class="entry entry--7" href="分场同灶.html">
-        <span class="text">
-          <span class="title">分场同灶</span>
-          <span class="sub">—— 一个关于“什么该分、什么该共”的故事</span>
-        </span>
-        <span class="concept">进程与线程</span>
-      </a>
+        <a class="entry entry--8" href="认格不认人.html">
+          <span class="text">
+            <span class="title">认格不认人</span>
+            <span class="sub">—— 一个关于“生客也能取对货”的故事</span>
+          </span>
+          <span class="concept">REST 端点</span>
+        </a>
 
-      <a class="entry entry--8" href="认格不认人.html">
-        <span class="text">
-          <span class="title">认格不认人</span>
-          <span class="sub">—— 一个关于“生客也能取对货”的故事</span>
-        </span>
-        <span class="concept">REST 端点</span>
-      </a>
+        <a class="entry entry--4" href="一纸关引.html">
+          <span class="text">
+            <span class="title">一纸关引</span>
+            <span class="sub">—— 一个关于“不查名册也敢放行”的故事</span>
+          </span>
+          <span class="concept">JWT</span>
+        </a>
 
-      <a class="entry entry--9" href="一树千丁.html">
-        <span class="text">
-          <span class="title">一树千丁</span>
-          <span class="sub">—— 一个关于“把一族人放进一棵树”的故事</span>
-        </span>
-        <span class="concept">DOM</span>
-      </a>
+        <a class="entry entry--9" href="一树千丁.html">
+          <span class="text">
+            <span class="title">一树千丁</span>
+            <span class="sub">—— 一个关于“把一族人放进一棵树”的故事</span>
+          </span>
+          <span class="concept">DOM</span>
+        </a>
+      </nav>
+    </section>
 
-      <a class="entry entry--10" href="门牌与指路簿.html">
-        <span class="text">
-          <span class="title">门牌与指路簿</span>
-          <span class="sub">—— 一个关于“东西在哪儿、路怎么走”的故事</span>
-        </span>
-        <span class="concept">IP 地址与路由</span>
-      </a>
+    <section class="category" aria-labelledby="cat-systems">
+      <div class="category-head">
+        <h2 class="category-title" id="cat-systems">系统与运行</h2>
+        <span class="category-en">Systems</span>
+        <p class="category-note">程序怎样在一个进程里分出许多线程，又怎样被装进一只箱子搬走。</p>
+      </div>
+      <nav class="toc" aria-label="系统与运行">
+        <a class="entry entry--7" href="分场同灶.html">
+          <span class="text">
+            <span class="title">分场同灶</span>
+            <span class="sub">—— 一个关于“什么该分、什么该共”的故事</span>
+          </span>
+          <span class="concept">进程与线程</span>
+        </a>
 
-      <a class="entry entry--11" href="一封挂号信.html">
-        <span class="text">
-          <span class="title">一封挂号信</span>
-          <span class="sub">—— 一个关于“丢了怎么办”的故事</span>
-        </span>
-        <span class="concept">TCP/IP</span>
-      </a>
+        <a class="entry entry--3" href="随班戏楼.html">
+          <span class="text">
+            <span class="title">随班戏楼</span>
+            <span class="sub">—— 一个关于“换个地方就演不了”的故事</span>
+          </span>
+          <span class="concept">Docker 与容器化</span>
+        </a>
+      </nav>
+    </section>
 
-      <a class="entry entry--12" href="按名索址.html">
-        <span class="text">
-          <span class="title">按名索址</span>
-          <span class="sub">—— 一个关于“记得名字，不记得门牌”的故事</span>
-        </span>
-        <span class="concept">DNS</span>
-      </a>
+    <section class="category" aria-labelledby="cat-ml">
+      <div class="category-head">
+        <h2 class="category-title" id="cat-ml">机器学习</h2>
+        <span class="category-en">Machine Learning</span>
+        <p class="category-note">模型怎样学得太好反而坏事，又怎样在一条街上分配注意力。</p>
+      </div>
+      <nav class="toc" aria-label="机器学习">
+        <a class="entry entry--2" href="记住每一场雨的人.html">
+          <span class="text">
+            <span class="title">记住每一场雨的人</span>
+            <span class="sub">—— 一个关于“懂得太多”的故事</span>
+          </span>
+          <span class="concept">过拟合</span>
+        </a>
 
-      <a class="entry entry--13" href="回车之后.html">
-        <span class="text">
-          <span class="title">回车之后</span>
-          <span class="sub">—— 一个关于“一次点击要经过多少手”的故事</span>
-        </span>
-        <span class="concept">一次请求的全程</span>
-      </a>
-
-      <a class="entry entry--14" href="封匣.html">
-        <span class="text">
-          <span class="title">封匣</span>
-          <span class="sub">—— 一个关于“让不该看的人看不见”的故事</span>
-        </span>
-        <span class="concept">TLS</span>
-      </a>
-    </nav>
+        <a class="entry entry--6" href="按牌分银.html">
+          <span class="text">
+            <span class="title">按牌分银</span>
+            <span class="sub">—— 一个关于“一条街上，谁该听谁”的故事</span>
+          </span>
+          <span class="concept">注意力机制</span>
+        </a>
+      </nav>
+    </section>
 
     <footer>共十四则 · 一则写给学习者的寓言</footer>
   </main>
