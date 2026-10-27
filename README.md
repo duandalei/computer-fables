@@ -4,9 +4,9 @@
 
 **在线阅读：<https://duandalei.github.io/computer-fables/>**
 
-目录页按四类编排，每类之内按由浅入深的次序排列。想弄懂互联网，从“互联网基础”读起。
+全书分四章，每章之下按由浅入深的次序排列，每篇即一节。想弄懂互联网，从第一章读起。
 
-## 互联网基础
+## 第一章 · 互联网基础
 
 | 寓言 | 概念 |
 |---|---|
@@ -16,7 +16,7 @@
 | [按名索址](https://duandalei.github.io/computer-fables/按名索址.html) | DNS |
 | [回车之后](https://duandalei.github.io/computer-fables/回车之后.html) | 一次请求的全程 |
 
-## Web 与应用
+## 第二章 · Web 与应用
 
 | 寓言 | 概念 |
 |---|---|
@@ -26,14 +26,14 @@
 | [一纸关引](https://duandalei.github.io/computer-fables/一纸关引.html) | JWT |
 | [一树千丁](https://duandalei.github.io/computer-fables/一树千丁.html) | DOM |
 
-## 系统与运行
+## 第三章 · 系统与运行
 
 | 寓言 | 概念 |
 |---|---|
 | [分场同灶](https://duandalei.github.io/computer-fables/分场同灶.html) | 进程与线程 |
 | [随班戏楼](https://duandalei.github.io/computer-fables/随班戏楼.html) | Docker 与容器化 |
 
-## 机器学习
+## 第四章 · 机器学习
 
 | 寓言 | 概念 |
 |---|---|
