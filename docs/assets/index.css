@@ -147,6 +147,7 @@
 .chapter-page--2 { --chapter-no: 2; }
 .chapter-page--3 { --chapter-no: 3; }
 .chapter-page--4 { --chapter-no: 4; }
+.chapter-page--5 { --chapter-no: 5; }
 
 /* 章内小节：寓言 / 概念 */
 .toc-head {
@@ -238,6 +239,10 @@
 .entry--12 { --accent-2: #85702f; }
 .entry--13 { --accent-2: #2f3e52; }
 .entry--14 { --accent-2: #8f3a32; }
+.entry--15 { --accent-2: #365d6b; }
+.entry--16 { --accent-2: #4f5b32; }
+.entry--17 { --accent-2: #6b4a35; }
+.entry--18 { --accent-2: #7d3f45; }
 
 @media (max-width: 760px) {
   .preface { font-size: 15px; }

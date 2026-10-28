@@ -4,7 +4,7 @@
 
 **在线阅读：<https://duandalei.github.io/computer-fables/>**
 
-全书分四章，每章之下按由浅入深的次序排列，每篇即一节。想弄懂互联网，从第一章读起。
+全书分五章，每章之下按由浅入深的次序排列，每篇即一节。想弄懂互联网，从第一章读起；想弄懂检索与生成，从第五章读起。
 
 ## [第一章 · 互联网基础](https://duandalei.github.io/computer-fables/chapter-1.html)
 
@@ -39,3 +39,12 @@
 |---|---|
 | [记住每一场雨的人](https://duandalei.github.io/computer-fables/记住每一场雨的人.html) | 过拟合 |
 | [按牌分银](https://duandalei.github.io/computer-fables/按牌分银.html) | Transformer 中的注意力机制 |
+
+## [第五章 · 检索与生成](https://duandalei.github.io/computer-fables/chapter-5.html)
+
+| 寓言 | 概念 |
+|---|---|
+| [染字成色](https://duandalei.github.io/computer-fables/染字成色.html) | 文本嵌入 |
+| [问邻](https://duandalei.github.io/computer-fables/问邻.html) | 向量索引 |
+| [一库三役](https://duandalei.github.io/computer-fables/一库三役.html) | 向量数据库与索引引擎 |
+| [先查后答](https://duandalei.github.io/computer-fables/先查后答.html) | 检索增强生成 |
